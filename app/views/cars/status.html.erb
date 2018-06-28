@@ -1,0 +1,15 @@
+<h1>This Is Your Car</h1>
+
+<p><b>Make:</b> <%= @car.make %></p>
+
+<p><b>Model Year:</b> <%= @car.model_year%></p>
+
+<p><b>Current Speed: </b> <%= @car.speed %> km/h</p>
+
+<p><b>Light Status: </b> <%= @car.lights %></p>
+
+<%= button_to 'accelerate', cars_accelerate_path, method: :get %>
+
+<%= button_to '    brake    ', cars_brake_path, method: :get %>
+
+<%= button_to 'light switch', cars_light_switch_path, method: :get %>
