@@ -1,7 +1,7 @@
 class CarsController < ApplicationController
 
   def create
-
+    
   end
 
   def new
